@@ -8,8 +8,8 @@ function input(question) {
     });
     rl.question(question, (answer) => {
       resolve(answer);
+      rl.close();
     });
-    rl.close();
   });
 }
 
