@@ -1,16 +1,15 @@
-const readline = require("readline");
+const readline = require("readline-sync");
 
-function input(question) {
+function inputAsync(question) {
   return new Promise((resolve) => {
-    const rl = readline.createInterface({
-      input: process.stdin,
-      output: process.stdout,
-    });
-    rl.question(question, (answer) => {
-      resolve(answer);
-      rl.close();
-    });
+    const answer = readline.question(question);
+    resolve(answer);
   });
 }
 
-module.exports = { input };
+function input(question) {
+  const answer = readline.question(question);
+  return answer;
+}
+
+module.exports = { input, inputAsync };

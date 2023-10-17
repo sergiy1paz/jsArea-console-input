@@ -1,6 +1,6 @@
 {
   "name": "@js-area/simple-console-input",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,11 +13,10 @@
     "url": "git+https://github.com/sergiy1paz/jsArea-console-input.git"
   },
   "dependencies": {
-    "readline": "1.3.0"
+    "readline-sync": "1.4.10"
   },
   "bugs": {
     "url": "https://github.com/sergiy1paz/jsArea-console-input/issues"
   },
-  "homepage": "https://github.com/sergiy1paz/jsArea-console-input#readme",
-  "devDependencies": {}
+  "homepage": "https://github.com/sergiy1paz/jsArea-console-input#readme"
 }
