@@ -9,6 +9,7 @@ function inputAsync(question) {
     });
     rl.question(question, (answer) => {
       resolve(answer);
+      rl.close();
     });
   });
 }
