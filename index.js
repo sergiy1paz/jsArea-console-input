@@ -1,6 +1,8 @@
 const readlineSync = require("readline-sync");
 const readline = require("readline");
 
+process.stdout.setEncoding('utf8');
+
 function inputAsync(question) {
   return new Promise((resolve) => {
     const rl = readline.createInterface({
