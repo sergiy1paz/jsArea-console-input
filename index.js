@@ -1,9 +1,12 @@
-const readlineSync = require("readline-sync");
 const readline = require("readline");
+const prompt = require("prompt-sync")();
+
+function input(question) {
+  const answer = prompt(question);
+  return answer;
+}
 
 process.stdout.setEncoding("utf8");
-readlineSync.setDefaultOptions({ encoding: "utf8" });
-
 function inputAsync(question) {
   return new Promise((resolve) => {
     const rl = readline.createInterface({
@@ -15,11 +18,6 @@ function inputAsync(question) {
       rl.close();
     });
   });
-}
-
-function input(question) {
-  const answer = readlineSync.question(question);
-  return answer;
 }
 
 module.exports = { input, inputAsync };

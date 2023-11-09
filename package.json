@@ -1,6 +1,6 @@
 {
   "name": "@js-area/simple-console-input",
-  "version": "3.3.1",
+  "version": "4.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,8 +13,8 @@
     "url": "git+https://github.com/sergiy1paz/jsArea-console-input.git"
   },
   "dependencies": {
-    "readline": "1.3.0",
-    "readline-sync": "1.4.10"
+    "prompt-sync": "4.2.0",
+    "readline": "1.3.0"
   },
   "bugs": {
     "url": "https://github.com/sergiy1paz/jsArea-console-input/issues"
